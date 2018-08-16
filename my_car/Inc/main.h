@@ -44,10 +44,16 @@
 /* Includes ------------------------------------------------------------------*/
 
 /* USER CODE BEGIN Includes */
-
+#include "stm32f1xx.h"
+#include "motor.h"
 /* USER CODE END Includes */
 
 /* Private define ------------------------------------------------------------*/
+
+#define wheels_V2_Pin GPIO_PIN_4
+#define wheels_V2_GPIO_Port GPIOB
+#define wheels_V1_Pin GPIO_PIN_5
+#define wheels_V1_GPIO_Port GPIOB
 
 /* ########################## Assert Selection ############################## */
 /**
@@ -60,6 +66,10 @@
 #define ADDR_24LCxx_Write 0xA0
 #define ADDR_24LCxx_Read 0xA1
 #define BufferSize 0x100
+
+extern uint32_t left_step ;
+extern uint32_t right_step ;
+extern uint32_t blue_key;
 
 /* USER CODE END Private defines */
 

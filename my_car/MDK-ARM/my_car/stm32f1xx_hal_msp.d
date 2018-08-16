@@ -2,8 +2,6 @@ my_car\stm32f1xx_hal_msp.o: ../Src/stm32f1xx_hal_msp.c
 my_car\stm32f1xx_hal_msp.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 my_car\stm32f1xx_hal_msp.o: ../Inc/stm32f1xx_hal_conf.h
 my_car\stm32f1xx_hal_msp.o: ../Inc/main.h
-my_car\stm32f1xx_hal_msp.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
-my_car\stm32f1xx_hal_msp.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
 my_car\stm32f1xx_hal_msp.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
 my_car\stm32f1xx_hal_msp.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h
 my_car\stm32f1xx_hal_msp.o: ../Drivers/CMSIS/Include/core_cm3.h
@@ -13,6 +11,12 @@ my_car\stm32f1xx_hal_msp.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
 my_car\stm32f1xx_hal_msp.o: ../Drivers/CMSIS/Include/core_cmFunc.h
 my_car\stm32f1xx_hal_msp.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
 my_car\stm32f1xx_hal_msp.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
+my_car\stm32f1xx_hal_msp.o: ../Inc/motor.h
+my_car\stm32f1xx_hal_msp.o: ../Inc/gpio.h
+my_car\stm32f1xx_hal_msp.o: ../Inc/main.h
+my_car\stm32f1xx_hal_msp.o: ../Inc/tim.h
+my_car\stm32f1xx_hal_msp.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
+my_car\stm32f1xx_hal_msp.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
 my_car\stm32f1xx_hal_msp.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdio.h
 my_car\stm32f1xx_hal_msp.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
 my_car\stm32f1xx_hal_msp.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h

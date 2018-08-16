@@ -6,7 +6,7 @@
   ******************************************************************************
   ** This notice applies to any and all portions of this file
   * that are not between comment pairs USER CODE BEGIN and
-  * USER CODE END. Other portions of this file, whether
+  * USER CODE END. Other portions of this file, whether 
   * inserted by the user or by software development tools
   * are owned by their respective copyright owners.
   *
@@ -56,7 +56,10 @@
 /* Private variables ---------------------------------------------------------*/
 float lux;
 // uint8_t buffer[21] = {0};
-int i ;
+int i = 0;
+uint32_t left_step = 0;
+uint32_t right_step = 0;
+uint32_t blue_key = 0;
 
 /* USER CODE END PV */
 
@@ -110,20 +113,21 @@ int main(void)
   MX_TIM3_Init();
   MX_TIM4_Init();
   MX_I2C2_Init();
-  MX_TIM2_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-    HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,GPIO_PIN_SET); //LED on the Nucleo board
-    //Motor control
-    HAL_GPIO_WritePin(GPIOB,GPIO_PIN_1,GPIO_PIN_SET);
-    HAL_GPIO_WritePin(GPIOB,GPIO_PIN_15,GPIO_PIN_RESET);
-    HAL_GPIO_WritePin(GPIOB,GPIO_PIN_14,GPIO_PIN_RESET);
-    HAL_GPIO_WritePin(GPIOB,GPIO_PIN_9,GPIO_PIN_SET);
+    // HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,GPIO_PIN_SET); //LED on the Nucleo board
+    // //Motor control
+    // HAL_GPIO_WritePin(GPIOB,GPIO_PIN_1,GPIO_PIN_SET);
+    // HAL_GPIO_WritePin(GPIOB,GPIO_PIN_15,GPIO_PIN_RESET);
+    // HAL_GPIO_WritePin(GPIOB,GPIO_PIN_14,GPIO_PIN_RESET);
+    // HAL_GPIO_WritePin(GPIOB,GPIO_PIN_9,GPIO_PIN_SET);
+    //
+    // HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_4);
+    // HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_4);
+    // TIM3-> CCR4 = 500;  // ¼Ä´æÆ÷Ö±½ÓÐ´
+    // TIM4-> CCR4 = 500;  // ¼Ä´æÆ÷Ö±½ÓÐ´
+    motor_left_step = motor_right_step = 0;
 
-    HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_4);
-    HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_4);
-    TIM3-> CCR4 = 500;  // ¼Ä´æÆ÷Ö±½ÓÐ´
-    TIM4-> CCR4 = 500;  // ¼Ä´æÆ÷Ö±½ÓÐ´
 
 
   /* USER CODE END 2 */
@@ -136,11 +140,15 @@ int main(void)
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
-  tsl2561_init();
-  lux = tsl2561_get_lux();
-  printf("The luminous flux is %f \n",lux);
-  HAL_Delay(500);
+  // tsl2561_init();
+  // lux = tsl2561_get_lux();
+  // printf("The luminous flux is %f \n",lux);
+  HAL_Delay(10);
+  printf("left_step is %d \n right_step is %d \n blue_key is %d \n",motor_left_step,motor_right_step,blue_key);
   // mpu6500_prt();
+
+
+
   }
 
 
@@ -158,7 +166,7 @@ void SystemClock_Config(void)
   RCC_OscInitTypeDef RCC_OscInitStruct;
   RCC_ClkInitTypeDef RCC_ClkInitStruct;
 
-    /**Initializes the CPU, AHB and APB busses clocks
+    /**Initializes the CPU, AHB and APB busses clocks 
     */
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
   RCC_OscInitStruct.HSEState = RCC_HSE_BYPASS;
@@ -172,7 +180,7 @@ void SystemClock_Config(void)
     _Error_Handler(__FILE__, __LINE__);
   }
 
-    /**Initializes the CPU, AHB and APB busses clocks
+    /**Initializes the CPU, AHB and APB busses clocks 
     */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
@@ -186,11 +194,11 @@ void SystemClock_Config(void)
     _Error_Handler(__FILE__, __LINE__);
   }
 
-    /**Configure the Systick interrupt time
+    /**Configure the Systick interrupt time 
     */
   HAL_SYSTICK_Config(HAL_RCC_GetHCLKFreq()/1000);
 
-    /**Configure the Systick
+    /**Configure the Systick 
     */
   HAL_SYSTICK_CLKSourceConfig(SYSTICK_CLKSOURCE_HCLK);
 
@@ -227,7 +235,7 @@ void _Error_Handler(char *file, int line)
   * @retval None
   */
 void assert_failed(uint8_t* file, uint32_t line)
-{
+{ 
   /* USER CODE BEGIN 6 */
   /* User can add his own implementation to report the file name and line number,
      tex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */

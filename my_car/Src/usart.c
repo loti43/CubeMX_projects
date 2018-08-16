@@ -6,7 +6,7 @@
   ******************************************************************************
   ** This notice applies to any and all portions of this file
   * that are not between comment pairs USER CODE BEGIN and
-  * USER CODE END. Other portions of this file, whether
+  * USER CODE END. Other portions of this file, whether 
   * inserted by the user or by software development tools
   * are owned by their respective copyright owners.
   *
@@ -55,7 +55,7 @@ void MX_USART1_UART_Init(void)
 {
 
   huart1.Instance = USART1;
-  huart1.Init.BaudRate = 115200;
+  huart1.Init.BaudRate = 9600;
   huart1.Init.WordLength = UART_WORDLENGTH_8B;
   huart1.Init.StopBits = UART_STOPBITS_1;
   huart1.Init.Parity = UART_PARITY_NONE;
@@ -99,10 +99,10 @@ void HAL_UART_MspInit(UART_HandleTypeDef* uartHandle)
   /* USER CODE END USART1_MspInit 0 */
     /* USART1 clock enable */
     __HAL_RCC_USART1_CLK_ENABLE();
-
-    /**USART1 GPIO Configuration
+  
+    /**USART1 GPIO Configuration    
     PA9     ------> USART1_TX
-    PA10     ------> USART1_RX
+    PA10     ------> USART1_RX 
     */
     GPIO_InitStruct.Pin = GPIO_PIN_9;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
@@ -125,10 +125,10 @@ void HAL_UART_MspInit(UART_HandleTypeDef* uartHandle)
   /* USER CODE END USART2_MspInit 0 */
     /* USART2 clock enable */
     __HAL_RCC_USART2_CLK_ENABLE();
-
-    /**USART2 GPIO Configuration
+  
+    /**USART2 GPIO Configuration    
     PA2     ------> USART2_TX
-    PA3     ------> USART2_RX
+    PA3     ------> USART2_RX 
     */
     GPIO_InitStruct.Pin = GPIO_PIN_2;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
@@ -156,10 +156,10 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
   /* USER CODE END USART1_MspDeInit 0 */
     /* Peripheral clock disable */
     __HAL_RCC_USART1_CLK_DISABLE();
-
-    /**USART1 GPIO Configuration
+  
+    /**USART1 GPIO Configuration    
     PA9     ------> USART1_TX
-    PA10     ------> USART1_RX
+    PA10     ------> USART1_RX 
     */
     HAL_GPIO_DeInit(GPIOA, GPIO_PIN_9|GPIO_PIN_10);
 
@@ -174,10 +174,10 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
   /* USER CODE END USART2_MspDeInit 0 */
     /* Peripheral clock disable */
     __HAL_RCC_USART2_CLK_DISABLE();
-
-    /**USART2 GPIO Configuration
+  
+    /**USART2 GPIO Configuration    
     PA2     ------> USART2_TX
-    PA3     ------> USART2_RX
+    PA3     ------> USART2_RX 
     */
     HAL_GPIO_DeInit(GPIOA, GPIO_PIN_2|GPIO_PIN_3);
 
@@ -185,7 +185,7 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
 
   /* USER CODE END USART2_MspDeInit 1 */
   }
-}
+} 
 
 /* USER CODE BEGIN 1 */
 
