@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"tim_ti_test\startup_stm32f103xb.o"
+"tim_ti_test\main.o"
+"tim_ti_test\gpio.o"
+"tim_ti_test\dma.o"
+"tim_ti_test\tim.o"
+"tim_ti_test\usart.o"
+"tim_ti_test\stm32f1xx_it.o"
+"tim_ti_test\stm32f1xx_hal_msp.o"
+"tim_ti_test\stm32f1xx_hal_gpio_ex.o"
+"tim_ti_test\stm32f1xx_hal_tim.o"
+"tim_ti_test\stm32f1xx_hal_tim_ex.o"
+"tim_ti_test\stm32f1xx_hal_uart.o"
+"tim_ti_test\stm32f1xx_hal.o"
+"tim_ti_test\stm32f1xx_hal_rcc.o"
+"tim_ti_test\stm32f1xx_hal_rcc_ex.o"
+"tim_ti_test\stm32f1xx_hal_gpio.o"
+"tim_ti_test\stm32f1xx_hal_dma.o"
+"tim_ti_test\stm32f1xx_hal_cortex.o"
+"tim_ti_test\stm32f1xx_hal_pwr.o"
+"tim_ti_test\stm32f1xx_hal_flash.o"
+"tim_ti_test\stm32f1xx_hal_flash_ex.o"
+"tim_ti_test\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "tim_ti_test\tim_ti_test.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "tim_ti_test.map" -o tim_ti_test\tim_ti_test.axf
