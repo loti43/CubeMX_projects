@@ -1,0 +1,274 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+F:\ARM\STM32CubeMXProjects\iap_1\MDK-ARM\iap_1.uvprojx
+Project File Date:  12/01/2018
+
+<h2>Output:</h2>
+Build target 'iap_1'
+compiling menu.c...
+linking...
+Program Size: Code=5888 RO-data=292 RW-data=44 ZI-data=1780  
+FromELF: creating hex file...
+".\iap_1\iap_1.axf" - 0 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.3.20.4.pack
+                ARM::CMSIS:CORE:3.20.0
+                Cortex Microcontroller Software Interface Standard (CMSIS) CORE, DSP, RTOS, Driver
+   * Component: CORE Version: 3.20.0
+
+<h2>Collection of Component include folders:</h2>
+  F:\ARM\STM32CubeMXProjects\iap_1\MDK-ARM\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.20.0
+Load "F:\\ARM\\STM32CubeMXProjects\\iap_1\\MDK-ARM\\iap_1\\iap_1.axf" 
+Error: Flash Download failed  -  Target DLL has been cancelled
+ created
+h2>
+  F:\ARM\STM32CubeMXProjects\iap_1\MDK-ARM\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.20.0
+Target not created
+\ARM\CMSIS\3.20.4\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.20.0
+Target not created
+20.4\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.20.0
+Target not created
+nt: ARM::CMSIS:CORE:3.20.0
+Target not created
+ce\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.20.0
+Target not created
+ created
+..\Core\Src\menu.c(98): error:  #169: expected a declaration
+  }
+..\Core\Src\menu.c: 6 warnings, 7 errors
+".\iap_1\iap_1.axf" - 7 Error(s), 6 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.3.20.4.pack
+                ARM::CMSIS:CORE:3.20.0
+                Cortex Microcontroller Software Interface Standard (CMSIS) CORE, DSP, RTOS, Driver
+   * Component: CORE Version: 3.20.0
+
+<h2>Collection of Component include folders:</h2>
+  F:\ARM\STM32CubeMXProjects\iap_1\MDK-ARM\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.20.0
+Target not created
+\MDK-ARM\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.20.0
+Target not created
+n of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.20.0
+Target not created
+iap_1\MDK-ARM\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.20.0
+Target not created
+          if(line_data[3] == 0x01)
+..\Core\Src\menu.c(45): warning:  #223-D: function "Serial_PutString" declared implicitly
+              Serial_PutString("\n\n\r program done!\n\r");
+..\Core\Src\menu.c(52): error:  #159: declaration is incompatible with previous "FLASH_If_Write" (declared at line 40)
+  uint32_t FLASH_If_Write(uint32_t destination, uint32_t *p_source, uint32_t length)
+..\Core\Src\menu.c(54): error:  #130: expected a "{"
+  void python_usart_upload(void)
+..\Core\Src\menu.c(56): warning:  #223-D: function "Serial_PutString" declared implicitly
+    Serial_PutString("\n\n\rSend data via usart\n\r");
+..\Core\Src\menu.c(57): error:  #20: identifier "UartHandle" is undefined
+    HAL_UART_Receive_DMA(&UartHandle,rx2_buffer,BUFFER_SIZE);
+..\Core\Src\menu.c(58): warning:  #180-D: argument is incompatible with formal parameter
+    program_one_line_hex(rx2_buffer);
+..\Core\Src\menu.c(60): warning:  #940-D: missing return statement at end of non-void function "FLASH_If_Write"
+  }
+..\Core\Src\menu.c(67): warning:  #223-D: function "Serial_PutString" declared implicitly
+      Serial_PutString("\r\n=================== Main Menu ============================\r\n\n");
+..\Core\Src\menu.c(71): error:  #20: identifier "huart2" is undefined
+      HAL_UART_Receive(&huart2, &key, 1, RX_TIMEOUT);
+..\Core\Src\menu.c(71): error:  #20: identifier "key" is undefined
+      HAL_UART_Receive(&huart2, &key, 1, RX_TIMEOUT);
+..\Core\Src\menu.c(71): error:  #20: identifier "RX_TIMEOUT" is undefined
+      HAL_UART_Receive(&huart2, &key, 1, RX_TIMEOUT);
+..\Core\Src\menu.c(82): error:  #20: identifier "JumpAddress" is undefined
+        JumpAddress = *(__IO uint32_t*) (APPLICATION_ADDRESS + 4);
+..\Core\Src\menu.c(84): error:  #20: identifier "JumpToApplication" is undefined
+        JumpToApplication = (pFunction) JumpAddress;
+..\Core\Src\menu.c(98): error:  #169: expected a declaration
+  }
+..\Core\Src\menu.c: 9 warnings, 27 errors
+".\iap_1\iap_1.axf" - 27 Error(s), 9 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.3.20.4.pack
+                ARM::CMSIS:CORE:3.20.0
+                Cortex Microcontroller Software Interface Standard (CMSIS) CORE, DSP, RTOS, Driver
+   * Component: CORE Version: 3.20.0
+
+<h2>Collection of Component include folders:</h2>
+  F:\ARM\STM32CubeMXProjects\iap_1\MDK-ARM\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.20.0
+Target not created
+0
+
+<h2>Collection of Component include folders:</h2>
+  F:\ARM\STM32CubeMXProjects\iap_1\MDK-ARM\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.20.0
+Target not created
+ers:</h2>
+  F:\ARM\STM32CubeMXProjects\iap_1\MDK-ARM\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.20.0
+Target not created
+\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.20.0
+Target not created
+...
+".\iap_1\iap_1.axf" - 34 Error(s), 10 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.3.20.4.pack
+                ARM::CMSIS:CORE:3.20.0
+                Cortex Microcontroller Software Interface Standard (CMSIS) CORE, DSP, RTOS, Driver
+   * Component: CORE Version: 3.20.0
+
+<h2>Collection of Component include folders:</h2>
+  F:\ARM\STM32CubeMXProjects\iap_1\MDK-ARM\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.20.0
+Target not created
+ined
+  extern UART_HandleTypeDef UartHandle;
+../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c: 0 warnings, 1 error
+compiling stm32f1xx_hal_tim_ex.c...
+../Core/Inc/main.h(47): error:  #20: identifier "UART_HandleTypeDef" is undefined
+  extern UART_HandleTypeDef UartHandle;
+../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c: 0 warnings, 1 error
+compiling stm32f1xx_hal_uart.c...
+../Core/Inc/main.h(47): error:  #20: identifier "UART_HandleTypeDef" is undefined
+  extern UART_HandleTypeDef UartHandle;
+../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c: 0 warnings, 1 error
+compiling stm32f1xx_hal.c...
+../Core/Inc/main.h(47): error:  #20: identifier "UART_HandleTypeDef" is undefined
+  extern UART_HandleTypeDef UartHandle;
+../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c: 0 warnings, 1 error
+compiling stm32f1xx_hal_rcc.c...
+../Core/Inc/main.h(47): error:  #20: identifier "UART_HandleTypeDef" is undefined
+  extern UART_HandleTypeDef UartHandle;
+../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c: 0 warnings, 1 error
+compiling stm32f1xx_hal_rcc_ex.c...
+../Core/Inc/main.h(47): error:  #20: identifier "UART_HandleTypeDef" is undefined
+  extern UART_HandleTypeDef UartHandle;
+../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c: 0 warnings, 1 error
+compiling stm32f1xx_hal_gpio.c...
+../Core/Inc/main.h(47): error:  #20: identifier "UART_HandleTypeDef" is undefined
+  extern UART_HandleTypeDef UartHandle;
+../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c: 0 warnings, 1 error
+compiling stm32f1xx_hal_dma.c...
+../Core/Inc/main.h(47): error:  #20: identifier "UART_HandleTypeDef" is undefined
+  extern UART_HandleTypeDef UartHandle;
+../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c: 0 warnings, 1 error
+compiling stm32f1xx_hal_cortex.c...
+../Core/Inc/main.h(47): error:  #20: identifier "UART_HandleTypeDef" is undefined
+  extern UART_HandleTypeDef UartHandle;
+../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c: 0 warnings, 1 error
+compiling stm32f1xx_hal_pwr.c...
+../Core/Inc/main.h(47): error:  #20: identifier "UART_HandleTypeDef" is undefined
+  extern UART_HandleTypeDef UartHandle;
+../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c: 0 warnings, 1 error
+compiling stm32f1xx_hal_flash.c...
+../Core/Inc/main.h(47): error:  #20: identifier "UART_HandleTypeDef" is undefined
+  extern UART_HandleTypeDef UartHandle;
+../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c: 0 warnings, 1 error
+compiling stm32f1xx_hal_flash_ex.c...
+../Core/Inc/main.h(47): error:  #20: identifier "UART_HandleTypeDef" is undefined
+  extern UART_HandleTypeDef UartHandle;
+../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c: 0 warnings, 1 error
+compiling system_stm32f1xx.c...
+../Core/Inc/main.h(47): error:  #20: identifier "UART_HandleTypeDef" is undefined
+  extern UART_HandleTypeDef UartHandle;
+../Core/Src/system_stm32f1xx.c: 0 warnings, 1 error
+".\iap_1\iap_1.axf" - 53 Error(s), 10 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.3.20.4.pack
+                ARM::CMSIS:CORE:3.20.0
+                Cortex Microcontroller Software Interface Standard (CMSIS) CORE, DSP, RTOS, Driver
+   * Component: CORE Version: 3.20.0
+
+<h2>Collection of Component include folders:</h2>
+  F:\ARM\STM32CubeMXProjects\iap_1\MDK-ARM\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.20.0
+Target not created
