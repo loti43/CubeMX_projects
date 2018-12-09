@@ -167,7 +167,7 @@ void Serial_PutString(uint8_t *p_string)
   {
     length++;
   }
-  HAL_UART_Transmit(&huart2, p_string, length, TX_TIMEOUT);
+  HAL_UART_Transmit_IT(&huart2, p_string, length);
 }
 
 /**

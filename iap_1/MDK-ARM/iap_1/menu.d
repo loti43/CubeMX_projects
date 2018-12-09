@@ -8,11 +8,10 @@
 .\iap_1\menu.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
 .\iap_1\menu.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
 .\iap_1\menu.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h
-.\iap_1\menu.o: ../Drivers/CMSIS/Include/core_cm3.h
+.\iap_1\menu.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm3.h
 .\iap_1\menu.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
-.\iap_1\menu.o: ../Drivers/CMSIS/Include/core_cmInstr.h
-.\iap_1\menu.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
-.\iap_1\menu.o: ../Drivers/CMSIS/Include/core_cmFunc.h
+.\iap_1\menu.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h
+.\iap_1\menu.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h
 .\iap_1\menu.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
 .\iap_1\menu.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
 .\iap_1\menu.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdio.h
@@ -29,3 +28,4 @@
 .\iap_1\menu.o: ../Core/Inc/usart.h
 .\iap_1\menu.o: ../Core/Inc/common.h
 .\iap_1\menu.o: ../Core/Inc/flash_if.h
+.\iap_1\menu.o: ../Core/Inc/dma.h

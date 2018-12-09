@@ -9,6 +9,7 @@
 ".\iap_1\flash_if.o"
 ".\iap_1\common.o"
 ".\iap_1\menu.o"
+".\iap_1\dma.o"
 ".\iap_1\stm32f1xx_hal_gpio_ex.o"
 ".\iap_1\stm32f1xx_hal_tim.o"
 ".\iap_1\stm32f1xx_hal_tim_ex.o"
